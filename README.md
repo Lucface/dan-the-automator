@@ -1,4 +1,4 @@
-# Grand Automator
+# Dan the Automator
 
 **Self-healing application infrastructure** - Automatically detect, diagnose, fix, and deploy bug fixes with minimal human intervention.
 
@@ -23,7 +23,7 @@ Total: ~2-3 minutes from bug to fix (vs hours/days traditionally)
 2. **Behind the Scenes**
    - Sentry captures the event + session replay
    - Seer AI analyzes: "onClick handler missing await, Promise rejected silently"
-   - Webhook triggers Grand Automator
+   - Webhook triggers Dan the Automator
 
 3. **Auto-Fix Pipeline**
    - Claude/Cursor agent receives the analysis
@@ -47,7 +47,7 @@ Total: ~2-3 minutes from bug to fix (vs hours/days traditionally)
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                           GRAND AUTOMATOR                                │
+│                         DAN THE AUTOMATOR                                │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                          │
 │  ┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐       │
@@ -132,8 +132,8 @@ Queues fix requests for processing by agents.
 
 ```bash
 # Clone
-git clone https://github.com/Lucface/grand-automator.git
-cd grand-automator
+git clone https://github.com/Lucface/dan-the-automator.git
+cd dan-the-automator
 
 # Install
 npm install
@@ -194,7 +194,7 @@ DATABASE_URL=postgresql://...
 
 ## Related Projects
 
-- [TwentyFive CRM](https://github.com/Lucface/twentyfive) - First app to use Grand Automator
+- [TwentyFive CRM](https://github.com/Lucface/twentyfive) - First app to use Dan the Automator
 - [Sentry](https://sentry.io) - Error tracking + Seer AI
 - [Claude Code](https://claude.ai) - AI coding agent
 
