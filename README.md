@@ -1,5 +1,20 @@
 # Dan the Automator
 
+**Your personal AI automation ecosystem** - A suite of intelligent agents that handle the tedious parts of digital life.
+
+## Apps
+
+### [Content Collector](./apps/content-collector/) - Universal Capture Net
+Drop anything from anywhere. AI sorts it out.
+
+```
+📱 iPhone → Share → Capture    →  AI categorizes  →  Right project
+🍎 Mac    → ⌘⇧C → Capture     →  AI categorizes  →  Right folder
+🖥️  Windows → Ctrl+Shift+C    →  AI categorizes  →  Right place
+📧 Email  → Forward to inbox  →  AI categorizes  →  Junk drawer → Sorted later
+```
+
+### Auto-Fixer (Coming Soon)
 **Self-healing application infrastructure** - Automatically detect, diagnose, fix, and deploy bug fixes with minimal human intervention.
 
 ## Vision
@@ -191,6 +206,23 @@ DATABASE_URL=postgresql://...
 - [ ] Learn from feedback
 - [ ] Prioritize high-impact fixes
 - [ ] Proactive bug detection
+
+## Quick Start: Content Collector
+
+The fastest way to start capturing ideas:
+
+```bash
+cd apps/content-collector
+npm install
+cp .env.example .env
+# Add your ANTHROPIC_API_KEY and DATABASE_URL
+npm run dev
+```
+
+Then set up capture on your devices:
+- **iOS**: See [shortcuts/ios/README.md](./apps/content-collector/shortcuts/ios/README.md)
+- **Mac**: Run `./scripts/install-mac.sh`
+- **Windows**: Run `.\scripts\install-windows.ps1`
 
 ## Related Projects
 

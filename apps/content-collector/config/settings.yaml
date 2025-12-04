@@ -1,0 +1,77 @@
+# Content Collector Settings
+
+capture:
+  # Where to put content when no category is determined
+  default_destination: "junk-drawer"
+
+  # When false, just accept everything without asking questions
+  # When true, may prompt for clarification on ambiguous content
+  ask_questions: false
+
+  # Confidence threshold for auto-categorization (0.0 - 1.0)
+  # Below this, content goes to junk-drawer
+  auto_categorize_threshold: 0.6
+
+  # Maximum content size (in characters)
+  max_content_size: 100000
+
+  # Rate limiting (requests per minute per API key)
+  rate_limit: 60
+
+processing:
+  # AI model for content analysis
+  model: "claude-sonnet-4-20250514"
+
+  # Max tokens for AI analysis
+  max_tokens: 1024
+
+  # Retry failed processing attempts
+  max_retries: 3
+  retry_delay_ms: 1000
+
+  # Concurrent processing jobs
+  concurrency: 3
+
+storage:
+  # Base path for file storage
+  base_path: "./content"
+
+  # File format for content items
+  format: "markdown"  # or "json"
+
+  # Include AI analysis in stored files
+  include_analysis: true
+
+  # Organize junk drawer by month
+  junk_drawer_by_month: true
+
+tidy:
+  # Cron schedule for daily tidy (3 AM)
+  daily_schedule: "0 3 * * *"
+
+  # Cron schedule for weekly tidy (Sunday 4 AM)
+  weekly_schedule: "0 4 * * 0"
+
+  # Cron schedule for monthly tidy (1st of month, 5 AM)
+  monthly_schedule: "0 5 1 * *"
+
+  # Auto-archive items older than this (days)
+  archive_after_days: 30
+
+  # Minimum items needed to suggest new category
+  new_category_threshold: 3
+
+notifications:
+  # Notify on successful capture
+  notify_on_capture: false
+
+  # Weekly digest of captured content
+  weekly_digest: true
+  digest_day: "sunday"
+  digest_hour: 9
+
+  # Slack notifications
+  slack:
+    enabled: false
+    webhook_url: ""
+    channel: "#content-capture"

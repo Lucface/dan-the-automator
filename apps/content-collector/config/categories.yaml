@@ -1,0 +1,117 @@
+# Category Definitions
+# Content is sorted into these categories
+# AI can also create new categories automatically
+
+categories:
+  # Default uncategorized bucket
+  junk-drawer:
+    name: "Junk Drawer"
+    description: "Uncategorized items for later sorting"
+    auto_detect: []
+    protected: true  # Cannot be deleted
+
+  code-snippets:
+    name: "Code Snippets"
+    description: "Useful code patterns, functions, and snippets"
+    auto_detect:
+      - code
+      - function
+      - snippet
+      - github.com
+      - gist.github
+      - "```"
+
+  design-inspiration:
+    name: "Design Inspiration"
+    description: "UI/UX ideas and visual inspiration"
+    auto_detect:
+      - design
+      - ui
+      - ux
+      - dribbble
+      - figma
+      - behance
+      - mockup
+
+  tools-resources:
+    name: "Tools & Resources"
+    description: "Useful tools, libraries, APIs, and services"
+    auto_detect:
+      - tool
+      - library
+      - api
+      - service
+      - app
+      - platform
+
+  articles-reading:
+    name: "Articles & Reading"
+    description: "Articles, blog posts, and documentation to read"
+    auto_detect:
+      - article
+      - blog
+      - post
+      - medium.com
+      - dev.to
+      - read
+
+  business-ideas:
+    name: "Business Ideas"
+    description: "Business opportunities, startup ideas, market insights"
+    auto_detect:
+      - business
+      - startup
+      - idea
+      - opportunity
+      - market
+      - revenue
+
+  learning:
+    name: "Learning"
+    description: "Educational content, tutorials, and courses"
+    auto_detect:
+      - tutorial
+      - course
+      - learn
+      - education
+      - guide
+      - how-to
+
+  media:
+    name: "Media"
+    description: "Videos, podcasts, and multimedia content"
+    auto_detect:
+      - video
+      - youtube
+      - podcast
+      - audio
+      - media
+      - watch
+
+  quotes-wisdom:
+    name: "Quotes & Wisdom"
+    description: "Inspirational quotes, wisdom, and memorable sayings"
+    auto_detect:
+      - quote
+      - wisdom
+      - said
+      - inspiration
+
+  productivity:
+    name: "Productivity"
+    description: "Productivity tips, workflows, and efficiency hacks"
+    auto_detect:
+      - productivity
+      - workflow
+      - efficiency
+      - hack
+      - tip
+      - shortcut
+
+# Settings for auto-category creation
+auto_create:
+  enabled: true
+  # Create new category after seeing this many similar uncategorized items
+  threshold: 3
+  # Require human approval before creating
+  require_approval: false

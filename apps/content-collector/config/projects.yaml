@@ -1,0 +1,54 @@
+# Project Definitions
+# These are the projects that content can be routed to
+# Add your own projects here
+
+projects:
+  twentyfive:
+    name: "TwentyFive CRM"
+    description: "CRM application with AI-powered features"
+    keywords:
+      - crm
+      - "25"
+      - customer
+      - sales
+      - dashboard
+      - client
+      - lead
+      - contact
+    intake_path: "./content/projects/twentyfive"
+
+  youtube-channel:
+    name: "YouTube Channel"
+    description: "Video content ideas, scripts, and resources"
+    keywords:
+      - video
+      - youtube
+      - content
+      - tutorial
+      - channel
+      - script
+      - thumbnail
+    intake_path: "./content/projects/youtube-channel"
+
+  dan-automator:
+    name: "Dan the Automator"
+    description: "This automation and AI agent system"
+    keywords:
+      - automation
+      - agent
+      - ai
+      - fix
+      - bot
+      - dan
+      - webhook
+      - sentry
+    intake_path: "./content/projects/dan-automator"
+
+  # Add your projects below
+  # example-project:
+  #   name: "Example Project"
+  #   description: "Description of what this project is"
+  #   keywords:
+  #     - keyword1
+  #     - keyword2
+  #   intake_path: "./content/projects/example"
