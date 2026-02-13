@@ -136,14 +136,14 @@ git clone https://github.com/Lucface/dan-the-automator.git
 cd dan-the-automator
 
 # Install
-npm install
+bun install
 
 # Configure
 cp .env.example .env
 # Add your API keys
 
 # Run
-npm run dev
+bun dev
 ```
 
 ## Environment Variables
